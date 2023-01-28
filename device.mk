@@ -20,5 +20,3 @@ LOCAL_PATH := device/nubia/nx531j
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
 
-# Dynamic Partition
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
