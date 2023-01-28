@@ -18,3 +18,5 @@
 
 PRODUCT_MAKEFILES := \
      $(LOCAL_DIR)/omni_nx531j.mk
+     
+COMMON_LUNCH_CHOICES := omni_nx531j-eng
