@@ -28,8 +28,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Inherit from nx531j device
 $(call inherit-product, device/nubia/nx531j/device.mk)
 
-# Inherit some common PitchBlack stuff.
-$(call inherit-product, vendor/pb/config/common.mk)
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := nx531j
