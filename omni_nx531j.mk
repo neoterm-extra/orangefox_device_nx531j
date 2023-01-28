@@ -16,6 +16,9 @@
 # limitations under the License.
 #
 
+# Release name
+PRODUCT_RELEASE_NAME := nx531j
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/embedded.mk)
@@ -25,14 +28,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Inherit from nx531j device
 $(call inherit-product, device/nubia/nx531j/device.mk)
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
+# Inherit some common PitchBlack stuff.
+$(call inherit-product, vendor/pb/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := nx531j
 PRODUCT_NAME := omni_nx531j
-PRODUCT_BRAND := nubia
-PRODUCT_MODEL := NX531J
-PRODUCT_MANUFACTURER := nubia
-PRODUCT_RELEASE_NAME := nubia NX531J
+PRODUCT_BRAND := Nubia
+PRODUCT_MODEL := Nubia Z11
+PRODUCT_MANUFACTURER := Nubia
