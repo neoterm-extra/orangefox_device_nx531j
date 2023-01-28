@@ -81,3 +81,6 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 TW_DEFAULT_LANGUAGE := zh_CN
+
+# PB Flags
+PB_TORCH_PATH := "/sys/class/leds/led:torch_0"
