@@ -81,6 +81,11 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 TW_DEFAULT_LANGUAGE := zh_CN
+TW_INCLUDE_FUSE_EXFAT := true
+TW_INCLUDE_FUSE_NTFS := true
+TW_INCLUDE_NTFS_3G := true
+TW_EXCLUDE_DEFAULT_USB_INIT := true
 
-# PB Flags
-PB_TORCH_PATH := "/sys/class/leds/led:torch_0"
+# Debug
+TWRP_INCLUDE_LOGCAT := true
+TARGET_USES_LOGD := true
