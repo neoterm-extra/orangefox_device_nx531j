@@ -66,8 +66,16 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/nubia/nx531j
 TARGET_KERNEL_CONFIG := nx531j_defconfig
 
+
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := msm8996
+TARGET_USES_UEFI := true
+
 # Platform
 TARGET_BOARD_PLATFORM := msm8996
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno530
+ENABLE_CPUSETS := true
+ENABLE_SCHEDBOOST := true
 
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
@@ -89,3 +97,17 @@ TW_EXCLUDE_DEFAULT_USB_INIT := true
 # Debug
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
+
+# other flags
+TARGET_RECOVERY_QCOM_RTC_FIX := true
+TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
+TW_DEFAULT_LANGUAGE := en
+TW_NO_LEGACY_PROPS := true
+TW_MAX_BRIGHTNESS := 4095
+TW_DEFAULT_BRIGHTNESS := 1950
+#
+
+# whether to include python, for ABX xml conversion (change to true to enable)
+TW_INCLUDE_PYTHON := true
+#
+#
