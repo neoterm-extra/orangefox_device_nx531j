@@ -30,10 +30,9 @@ $(call inherit-product, device/nubia/nx531j/device.mk)
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/twrp/config/common.mk)
-
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := nx531j
-PRODUCT_NAME := omni_nx531j
+PRODUCT_NAME := twrp_nx531j
 PRODUCT_BRAND := Nubia
 PRODUCT_MODEL := Nubia Z11
 PRODUCT_MANUFACTURER := Nubia
