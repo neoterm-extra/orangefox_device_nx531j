@@ -17,6 +17,6 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/omni_nx531j.mk
+     $(LOCAL_DIR)/twrp_nx531j.mk
      
-COMMON_LUNCH_CHOICES := omni_nx531j-eng
+COMMON_LUNCH_CHOICES := twrp_nx531j-eng
